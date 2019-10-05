@@ -49,15 +49,28 @@ h1, h2, h3 {
   text-align: center;
   cursor: pointer;
   user-select: none;
-  background: linear-gradient(to right, black 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to right, #071017 50%, rgba(0, 0, 0, 0) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .3s ease-out;
 }
 
+.slide-btn-alt {
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(to right, #ffffff 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .3s ease-out;
+}
 .slide-btn:hover {
   background-position: left bottom;
 }
+.slide-btn-alt:hover {
+  background-position: left bottom;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -69,6 +82,9 @@ ul {
 }
 .no-margins {
   margin: 0;
+}
+.margin-title {
+  margin: 0 0 15px 0;
 }
 .m-center {
     margin: 0 auto;
@@ -97,6 +113,9 @@ ul {
 }
 .text-center {
   text-align: center;
+}
+.display-block {
+  display: block;
 }
 @media screen and (max-width: 1366px) {
   .title {

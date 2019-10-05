@@ -40,7 +40,7 @@ export default {
         slidesPerView: 'auto',
         keyboard: false,
         freeMode: true,
-        freeModeMomentumRatio: 0.5,
+        freeModeMomentumRatio: 1,
         mousewheel: false,
         scrollbar: false,
         navigation: false,

@@ -65,10 +65,10 @@ export default {
     width: 80px;
 }
 .contact-btn {
-  border: 1px solid black;
+  border: 1px solid #071017;
   border-radius: 2px;
   padding: 10px 25px;
-  color: black;
+  color: #071017;
 }
 .contact-btn:hover {
   color: white;

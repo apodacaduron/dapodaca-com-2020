@@ -5,6 +5,7 @@
   </transition>
   <header-section></header-section>
   <software-section></software-section>
+  <frameworks-section></frameworks-section>
 </div>
 
 </template>
@@ -13,6 +14,7 @@
 const Loading = () => import('@/components/Loading.vue')
 const HeaderSection = () => import('@/components/HeaderSection.vue')
 const SoftwareSection = () => import('@/components/SoftwareSection.vue')
+const FrameworksSection = () => import('@/components/FrameworksSection.vue')
 
 export default {
   name: 'home',
@@ -20,6 +22,7 @@ export default {
     Loading,
     HeaderSection,
     SoftwareSection,
+    FrameworksSection,
   },
   data: () => ({
     isLoading: true

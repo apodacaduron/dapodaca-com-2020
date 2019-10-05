@@ -1,9 +1,9 @@
 <template>
 <section id="s-header" class="container">
   <nav-desktop></nav-desktop>
-  <div class="w-container m-center" data-tilt>
+  <div class="w-container m-center">
     <div class="title-container">
-      <h1 class="title no-margins">DANIEL APODACA</h1>
+      <h1 class="title margin-title">DANIEL APODACA</h1>
       <span class="subtitle">I'm a Fullstack Web Developer & Designer</span>
     </div>
     <img class="portrait" src="@/assets/portrait.png" alt="">
@@ -13,14 +13,25 @@
 </template>
 
 <script>
-require('vanilla-tilt/dist/vanilla-tilt.min.js')
 const NavDesktop = () => import('@/components/NavDesktop.vue')
 
 export default {
   name: 'headerSection',
   components: {
     NavDesktop
-  }
+  },
+  data: () => ({
+    tiltConfig: {
+      reverse: false,
+      max: 35,
+      perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+      scale: 1,      // 2 = 200%, 1.5 = 150%, etc..
+      speed: 300,    // Speed of the enter/exit transition
+      transition: true,   // Set a transition on enter/exit.
+      reset: true,    // If the tilt effect has to be reset on exit.
+      easing: "cubic-bezier(.03,.98,.52,.99)"    // Easing on enter/exit.
+    }
+  })
 }
 </script>
 
@@ -44,6 +55,7 @@ export default {
 	position: absolute;
 	left: 7%;
 	bottom: 13%;
+  z-index: 8;
 }
 .portrait {
   height: 95%;
