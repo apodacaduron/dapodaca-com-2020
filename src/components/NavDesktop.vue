@@ -6,14 +6,15 @@
         </div>
         <div class="nav-links-container d-center fill">
             <ul class="nav-links">
-                <li><a href="" class="nav-btn uppercase">Work</a></li>
-                <li><a href="" class="nav-btn uppercase">Photography</a></li>
-                <li><a href="" class="nav-btn uppercase">Videos</a></li>
-                <li><a href="" class="nav-btn uppercase">About</a></li>
+                <li><a href="" class="nav-btn">Profile</a></li>
+                <li><a href="" class="nav-btn">Projects</a></li>
+                <li><a href="" class="nav-btn">Skills</a></li>
+                <li><a href="" class="nav-btn">Experience</a></li>
+                <li><a href="" class="nav-btn">Education</a></li>
             </ul>
         </div>
         <div class="contact-container w-140 d-center">
-            <a href="" class="slide-btn contact-btn uppercase">Get in Touch</a>
+            <d-button text="Download CV"></d-button>
         </div>
     </div>
 </nav>
@@ -23,6 +24,7 @@
 export default {
   name: 'navDesktop',
   components: {
+      DButton: () => import('@/components/form/DButton.vue')
   }
 }
 </script>
@@ -55,23 +57,14 @@ export default {
 .nav-btn {
     padding: 8px 15px;
     color: #071017;
-		transition: 0.2s all ease-in-out;
-		border-radius: 2px;
+    transition: 0.2s all ease-in-out;
+    border-radius: 2px;
 }
 .w-140 {
     width: 140px;
 }
 .w-80 {
     width: 80px;
-}
-.contact-btn {
-  border: 1px solid #071017;
-  border-radius: 2px;
-  padding: 10px 25px;
-  color: #071017;
-}
-.contact-btn:hover {
-  color: white;
 }
 .main-logo-b {
 	height: 50px;

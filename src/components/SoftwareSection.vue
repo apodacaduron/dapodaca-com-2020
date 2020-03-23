@@ -49,6 +49,46 @@ export default {
       },
       softwareUsed: [
         {
+          icon: 'vue-logo.png',
+          name: 'Vue',
+          url: 'https://vuejs.org/'
+        },
+        {
+          icon: 'angular-icon.svg',
+          name: 'Angular',
+          url: 'https://angular.io/'
+        },
+        {
+          icon: 'ionic.svg',
+          name: 'Ionic',
+          url: 'https://ionicframework.com/'
+        },
+        {
+          icon: 'laravel-logo.svg',
+          name: 'Laravel',
+          url: 'https://laravel.com/'
+        },
+        {
+          icon: 'vscode-logo.svg',
+          name: 'VS Code',
+          url: 'https://code.visualstudio.com/'
+        },
+        {
+          icon: 'blender-logo.png',
+          name: 'Blender',
+          url: 'https://www.blender.org/'
+        },
+        {
+          icon: 'linux-logo.svg',
+          name: 'Linux',
+          url: 'https://www.archlinux.org/'
+        },
+        {
+          icon: 'postman-logo.svg',
+          name: 'Postman',
+          url: 'https://www.getpostman.com/'
+        },
+        {
           icon: 'after-effects.svg',
           name: 'After Effects',
           url: 'https://www.adobe.com/mx/products/aftereffects.html'
@@ -69,60 +109,15 @@ export default {
           url: 'https://www.adobe.com/mx/products/photoshop.html'
         },
         {
-          icon: 'angular-icon.svg',
-          name: 'Angular',
-          url: 'https://angular.io/'
-        },
-        {
-          icon: 'vue-logo.png',
-          name: 'Vue',
-          url: 'https://vuejs.org/'
-        },
-        {
-          icon: 'laravel-logo.svg',
-          name: 'Laravel',
-          url: 'https://laravel.com/'
-        },
-        {
-          icon: 'ionic.svg',
-          name: 'Ionic',
-          url: 'https://ionicframework.com/'
-        },
-        {
-          icon: 'vscode-logo.svg',
-          name: 'VS Code',
-          url: 'https://code.visualstudio.com/'
-        },
-        {
-          icon: 'atom-logo.png',
-          name: 'Atom',
-          url: 'https://atom.io/'
-        },
-        {
-          icon: 'blender-logo.png',
-          name: 'Blender',
-          url: 'https://www.blender.org/'
-        },
-        {
-          icon: 'linux-logo.svg',
-          name: 'Linux',
-          url: 'https://www.archlinux.org/'
+          icon: 'premier.svg',
+          name: 'Premiere',
+          url: 'https://www.adobe.com/mx/products/premiere.html'
         },
         {
           icon: 'media-encoder.svg',
           name: 'Media Encoder',
           url: 'https://www.adobe.com/mx/products/media-encoder.html'
-        },
-        {
-          icon: 'postman-logo.svg',
-          name: 'Postman',
-          url: 'https://www.getpostman.com/'
-        },
-        {
-          icon: 'premier.svg',
-          name: 'Premiere',
-          url: 'https://www.adobe.com/mx/products/premiere.html'
-        },
+        }
       ]
     }
   },

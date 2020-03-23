@@ -14,7 +14,10 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700&display=swap');
-
+:root {
+  --light-gray: #F1F4FB;
+  --dark: #071017;
+}
 body {
   margin: 0;
   padding: 0;
@@ -38,39 +41,15 @@ body {
   }
 }
 #app {
-  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
-.slide-btn {
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-  background: linear-gradient(to right, #071017 50%, rgba(0, 0, 0, 0) 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .3s ease-out;
+h1, h2, h3, h4 {
+  margin: 0;
 }
-
-.slide-btn-alt {
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-  background: linear-gradient(to right, #ffffff 50%, rgba(0, 0, 0, 0) 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .3s ease-out;
-}
-.slide-btn:hover {
-  background-position: left bottom;
-}
-.slide-btn-alt:hover {
-  background-position: left bottom;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -83,12 +62,6 @@ ul {
 .no-margins {
   margin: 0;
 }
-.margin-title {
-  margin: 0 0 15px 0;
-}
-.m-center {
-    margin: 0 auto;
-}
 .d-center {
     display: flex;
     align-items: center;
@@ -98,14 +71,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-.title {
-  font-size: 8rem;
-  line-height: 8rem;
-}
-.subtitle {
-  display: block;
-  font-size: 1.6rem;
 }
 .text {
   display: block;
@@ -117,24 +82,5 @@ ul {
 .display-block {
   display: block;
 }
-@media screen and (max-width: 1366px) {
-  .title {
-    font-size: 7rem;
-    line-height: 7rem;
-  }
-  .subtitle {
-    display: block;
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 910px) {
-  .title {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-  .subtitle {
-    display: block;
-    font-size: 1.2rem;
-  }
-}
+
 </style>

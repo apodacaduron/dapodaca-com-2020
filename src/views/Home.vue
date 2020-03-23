@@ -5,24 +5,19 @@
   </transition>
   <header-section></header-section>
   <software-section></software-section>
-  <frameworks-section></frameworks-section>
+  <projects-section></projects-section>
 </div>
 
 </template>
 
 <script>
-const Loading = () => import('@/components/Loading.vue')
-const HeaderSection = () => import('@/components/HeaderSection.vue')
-const SoftwareSection = () => import('@/components/SoftwareSection.vue')
-const FrameworksSection = () => import('@/components/FrameworksSection.vue')
-
 export default {
   name: 'home',
   components: {
-    Loading,
-    HeaderSection,
-    SoftwareSection,
-    FrameworksSection,
+    Loading: () => import('@/components/Loading.vue'),
+    HeaderSection: () => import('@/components/HeaderSection.vue'),
+    SoftwareSection: () => import('@/components/SoftwareSection.vue'),
+    ProjectsSection: () => import('@/components/projects/ProjectsSection.vue'),
   },
   data: () => ({
     isLoading: true

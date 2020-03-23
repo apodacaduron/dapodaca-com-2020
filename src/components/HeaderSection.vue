@@ -5,6 +5,7 @@
     <div class="title-container">
       <h1 class="title margin-title">DANIEL APODACA</h1>
       <span class="subtitle">I'm a Fullstack Web Developer & Designer</span>
+
     </div>
     <img class="portrait" src="@/assets/portrait.png" alt="">
   </div>
@@ -13,29 +14,16 @@
 </template>
 
 <script>
-const NavDesktop = () => import('@/components/NavDesktop.vue')
-
 export default {
   name: 'headerSection',
   components: {
-    NavDesktop
+    NavDesktop: () => import('@/components/NavDesktop.vue')
   },
-  data: () => ({
-    tiltConfig: {
-      reverse: false,
-      max: 35,
-      perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
-      scale: 1,      // 2 = 200%, 1.5 = 150%, etc..
-      speed: 300,    // Speed of the enter/exit transition
-      transition: true,   // Set a transition on enter/exit.
-      reset: true,    // If the tilt effect has to be reset on exit.
-      easing: "cubic-bezier(.03,.98,.52,.99)"    // Easing on enter/exit.
-    }
-  })
+  data: () => ({})
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #s-header {
   width: 100%;
   height: 100vh;
@@ -44,24 +32,60 @@ export default {
   z-index: 1;
 	position: relative;
 	user-select: none;
-}
-.w-container {
-  max-width: 1800px;
-	position: relative;
-	height: 100%;
+  .w-container {
+    max-width: 1800px;
+    position: relative;
+    height: 100%;
+
+    .portrait {
+      height: 95%;
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+    }
+  }
+  .m-center {
+    margin: 0 auto;
+  }
 }
 .title-container {
-	width: 630px;
-	position: absolute;
-	left: 7%;
-	bottom: 13%;
+  width: 630px;
+  position: absolute;
+  left: 7%;
+  bottom: 13%;
   z-index: 8;
 }
-.portrait {
-  height: 95%;
-  position: absolute;
-  right: 0;
-  bottom: -20px;
+.title {
+  font-size: 8rem;
+  line-height: 8rem;
+}
+.margin-title {
+  margin: 0 0 15px 0;
+}
+.subtitle {
+  display: block;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .title {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+  .subtitle {
+    display: block;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 910px) {
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .subtitle {
+    display: block;
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 1070px) {

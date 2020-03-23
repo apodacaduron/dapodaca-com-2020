@@ -10,8 +10,7 @@
 <script>
 export default {
   name: 'notFound',
-  components: {
-  }
+  components: {}
 }
 </script>
 

@@ -1,18 +1,14 @@
 <template>
-
-<div class="container d-center">
-	<spinner></spinner>
-</div>
-
+	<div class="container d-center">
+		<spinner></spinner>
+	</div>
 </template>
 
 <script>
-const Spinner = () => import('@/components/Spinner.vue')
-
 export default {
   name: 'loading',
   components: {
-		Spinner
+		Spinner: () => import('@/components/Spinner.vue')
   }
 }
 </script>
