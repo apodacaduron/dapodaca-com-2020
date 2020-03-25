@@ -1,25 +1,18 @@
 <template>
-<section id="s-software">
-  <div class="w-container m-center">
-    <div class="title-container">
-      <span class="subtitle">Tools i've used</span>
-    </div>
-    <div class="swiper-container">
-      <div class="fade-left"></div>
-      <div class="fade-right"></div>
-      <swiper :options="config">
-        <swiper-slide class="slide-item" v-for="(slide, index) in softwareUsed" :key="index">
-          <div class="icon-container text-center">
-            <a class="reset-anchor" target="_blank" :href="slide.url">
-              <img class="icon" :src="require(`@/assets/${slide.icon}`)" :alt="slide.name">
-              <span class="text">{{ slide.name }}</span>
-            </a>
-          </div>
-        </swiper-slide>
-      </swiper>
-    </div>
-  </div>
-</section>
+<div class="swiper-container">
+  <div class="fade-left"></div>
+  <div class="fade-right"></div>
+  <swiper :options="config">
+    <swiper-slide class="slide-item" v-for="(slide, index) in softwareUsed" :key="index">
+      <div class="icon-container text-center">
+        <a class="reset-anchor" target="_blank" :href="slide.url">
+          <img class="icon" :src="require(`@/assets/${slide.icon}`)" :alt="slide.name">
+          <span class="text">{{ slide.name }}</span>
+        </a>
+      </div>
+    </swiper-slide>
+  </swiper>
+</div>
 
 </template>
 
@@ -28,7 +21,7 @@ import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 export default {
-  name: 'softwareSection',
+  name: 'SoftwareSlider',
   components: {
     swiper,
     swiperSlide
@@ -125,32 +118,12 @@ export default {
 </script>
 
 <style scoped>
-#s-software {
-  width: 100%;
-  padding: 50px 0;
-  margin-top: 20px;
-  height: 250px;
-  box-sizing: border-box;
-	max-height: 1080px;
-  z-index: 1;
-	position: relative;
-	user-select: none;
-}
-.w-container {
-  max-width: 1800px;
-	position: relative;
-	height: 100%;
-}
-.title-container {
-	width: 100%;
-  text-align: center;
-}
 .fade-left {
   height: 100%;
   position: absolute;
   background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  width: 100px;
-  left: 50px;
+  width: 5%;
+  left: 0;
   z-index: 9;
   pointer-events: none;
 }
@@ -158,14 +131,14 @@ export default {
   height: 100%;
   position: absolute;
   background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  width: 100px;
-  right: 50px;
+  width: 5%;
+  right: 0;
   z-index: 9;
   pointer-events: none;
 }
 .swiper-container {
-  padding: 0 50px;
-  margin: 8px 0 0 0;
+  margin: 8px auto 0 auto;
+  max-width: 1024px;
 }
 .slide-item {
   width: auto;

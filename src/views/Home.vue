@@ -4,8 +4,11 @@
     <loading v-if="isLoading"></loading>
   </transition>
   <header-section></header-section>
-  <software-section></software-section>
+  <profile-section></profile-section>
   <projects-section></projects-section>
+  <skills-section></skills-section>
+  <experience-section></experience-section>
+  <footer-section></footer-section>
 </div>
 
 </template>
@@ -16,8 +19,12 @@ export default {
   components: {
     Loading: () => import('@/components/Loading.vue'),
     HeaderSection: () => import('@/components/HeaderSection.vue'),
-    SoftwareSection: () => import('@/components/SoftwareSection.vue'),
+    ProfileSection: () => import('@/components/profile/ProfileSection.vue'),
     ProjectsSection: () => import('@/components/projects/ProjectsSection.vue'),
+    SkillsSection: () => import('@/components/skills/SkillsSection.vue'),
+    ExperienceSection: () => import('@/components/experience/ExperienceSection.vue'),
+    EducationSection: () => import('@/components/education/EducationSection.vue'),
+    FooterSection: () => import('@/components/footer/FooterSection.vue'),
   },
   data: () => ({
     isLoading: true

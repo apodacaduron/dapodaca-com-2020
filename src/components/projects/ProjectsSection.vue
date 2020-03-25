@@ -1,5 +1,6 @@
 <template>
   <section id="projects-container">
+    <div class="divider d-top"></div>
     <div class="title-container">
       <h4>Projects</h4>
       <h2>Recent Works</h2>
@@ -7,6 +8,7 @@
     <div class="cards-container">
       <projects-table :tabs="tabs" :projects="projects"></projects-table>
     </div>
+    <div class="divider d-bottom"></div>
   </section>
 </template>
 
@@ -28,9 +30,38 @@ export default {
     projects: [
       {
         title: 'Ultra Colors',
-        description: 'Website focused on creating and sharing color palettes for designers and developers.',
+        description: 'Website focused on creating and sharing color palettes for designers and developers, made with the MEVN stack.',
         url: '',
+        image: 'Jobs/Speed.jpg',
         type: 0
+      },
+      {
+        title: 'Real State',
+        description: 'Landing page with administrator dashboard to create posts about homes for sale and rent, made with Angular and Laravel.',
+        url: '',
+        image: 'Jobs/Speed.jpg',
+        type: 0
+      },
+      {
+        title: 'Food Recipes',
+        description: 'A mobile app to create, share, like and save food recipes, made with Ionic and Laravel',
+        url: '',
+        image: 'Jobs/Speed.jpg',
+        type: 0
+      },
+      {
+        title: 'Flutter CRM',
+        description: 'Complementary app of an existing CRM using it\'s REST Api service.',
+        url: '',
+        image: 'Jobs/Speed.jpg',
+        type: 1
+      },
+      {
+        title: 'Electron COMPAQ Data Sync',
+        description: 'Data sync from COMPAQ local database through an electron client to a crm on the cloud.',
+        url: '',
+        image: 'Jobs/Speed.jpg',
+        type: 1
       },
       {
         title: 'Speed',
@@ -45,7 +76,21 @@ export default {
         url: 'https://www.h20capital.com/',
         image: 'Jobs/Speed.jpg',
         type: 1
-      }
+      },
+      {
+        title: 'CRM Systems',
+        description: 'Multiple CRM Systems with the goal of improving business relationships and profitability.',
+        url: 'https://www.h20capital.com/',
+        image: 'Jobs/Speed.jpg',
+        type: 1
+      },
+      {
+        title: 'ERP Systems',
+        description: 'Focused on internal processes that are essential to a business, from inventory to customer management.',
+        url: 'https://www.h20capital.com/',
+        image: 'Jobs/Speed.jpg',
+        type: 1
+      },
     ]
   })
 }
@@ -53,11 +98,27 @@ export default {
 
 <style lang="scss" scoped>
   #projects-container {
-    min-height: 600px;
+    min-height: 550px;
     width: 100%;
     background: var(--light-gray);
     padding: 70px 20px 70px 20px;
     box-sizing: border-box;
+    position: relative;
+    .divider {
+      width: 100%;
+      position: absolute;
+      height: 30px;
+      left: 0;
+      background: url('../../assets/divider.svg');
+      background-size: auto 105%;
+    }
+    .d-top {
+      top: 0;
+      transform: rotate(180deg);
+    }
+    .d-bottom {
+      bottom: 0;
+    }
     .title-container {
       text-align: center;
       margin: 0 0 20px 0;
