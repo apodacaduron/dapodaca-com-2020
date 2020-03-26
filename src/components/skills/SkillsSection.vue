@@ -1,5 +1,5 @@
 <template>
-  <section id="skills-container">
+  <section id="skills">
     <div class="divider d-top"></div>
     <div class="title-container">
       <h4>Skills</h4>
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#skills-container {
+#skills {
   min-height: 380px;
   width: 100%;
   padding: 70px 0 70px 0;

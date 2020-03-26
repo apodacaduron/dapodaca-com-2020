@@ -1,5 +1,5 @@
 <template>
-  <section id="experience-container">
+  <section id="experience">
     <div class="divider d-top"></div>
     <div class="title-container">
       <h4>Experience</h4>
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#experience-container {
+#experience {
   min-height: 380px;
   width: 100%;
   background: var(--light-gray);
@@ -52,12 +52,6 @@ export default {
     h2 {
       font-size: 2.4rem;
     }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .experience-content {
-
   }
 }
 </style>

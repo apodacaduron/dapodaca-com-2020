@@ -6,11 +6,12 @@
         </div>
         <div class="nav-links-container d-center fill">
             <ul class="nav-links">
-                <li><a href="" class="nav-btn">Profile</a></li>
-                <li><a href="" class="nav-btn">Projects</a></li>
-                <li><a href="" class="nav-btn">Skills</a></li>
-                <li><a href="" class="nav-btn">Experience</a></li>
-                <li><a href="" class="nav-btn">Education</a></li>
+                <li><a href="#profile" class="nav-btn" v-smooth-scroll>Profile</a></li>
+                <li><a href="#projects" class="nav-btn" v-smooth-scroll>Projects</a></li>
+                <li><a href="#skills" class="nav-btn" v-smooth-scroll>Skills</a></li>
+                <li><a href="#experience" class="nav-btn" v-smooth-scroll>Experience</a></li>
+                <li><a href="#education" class="nav-btn" v-smooth-scroll>Education</a></li>
+                <li><a href="#contact" class="nav-btn" v-smooth-scroll>Contact</a></li>
             </ul>
         </div>
         <div class="contact-container w-140 d-center">

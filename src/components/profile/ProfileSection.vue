@@ -1,5 +1,5 @@
 <template>
-  <section id="profile-container">
+  <section id="profile">
     <div class="divider d-top"></div>
     <div class="title-container">
       <h4>Profile</h4>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#profile-container {
+#profile {
   min-height: 450px;
   width: 100%;
   padding: 70px 20px 70px 20px;
