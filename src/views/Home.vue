@@ -8,6 +8,7 @@
   <projects-section></projects-section>
   <skills-section></skills-section>
   <experience-section></experience-section>
+  <education-section></education-section>
   <footer-section></footer-section>
 </div>
 

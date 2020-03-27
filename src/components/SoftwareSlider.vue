@@ -6,7 +6,7 @@
     <swiper-slide class="slide-item" v-for="(slide, index) in softwareUsed" :key="index">
       <div class="icon-container text-center">
         <a class="reset-anchor" target="_blank" :href="slide.url">
-          <img class="icon" :src="require(`@/assets/${slide.icon}`)" :alt="slide.name">
+          <img class="icon" :src="require(`@/assets/tools/${slide.icon}`)" :alt="slide.name">
           <span class="text">{{ slide.name }}</span>
         </a>
       </div>
@@ -26,94 +26,147 @@ export default {
     swiper,
     swiperSlide
   },
-  data () {
-    return {
-      config: {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        keyboard: false,
-        freeMode: true,
-        freeModeMomentumRatio: 1,
-        mousewheel: false,
-        scrollbar: false,
-        navigation: false,
-        pagination: false,
-        spaceBetween: 25
+  data: () => ({
+    config: {
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+      keyboard: false,
+      freeMode: true,
+      freeModeMomentumRatio: 1,
+      mousewheel: false,
+      scrollbar: false,
+      navigation: false,
+      pagination: false,
+      spaceBetween: 25
+    },
+    softwareUsed: [
+      {
+        icon: 'vue-logo.png',
+        name: 'Vue',
+        url: 'https://vuejs.org/'
       },
-      softwareUsed: [
-        {
-          icon: 'vue-logo.png',
-          name: 'Vue',
-          url: 'https://vuejs.org/'
-        },
-        {
-          icon: 'angular-icon.svg',
-          name: 'Angular',
-          url: 'https://angular.io/'
-        },
-        {
-          icon: 'ionic.svg',
-          name: 'Ionic',
-          url: 'https://ionicframework.com/'
-        },
-        {
-          icon: 'laravel-logo.svg',
-          name: 'Laravel',
-          url: 'https://laravel.com/'
-        },
-        {
-          icon: 'vscode-logo.svg',
-          name: 'VS Code',
-          url: 'https://code.visualstudio.com/'
-        },
-        {
-          icon: 'blender-logo.png',
-          name: 'Blender',
-          url: 'https://www.blender.org/'
-        },
-        {
-          icon: 'linux-logo.svg',
-          name: 'Linux',
-          url: 'https://www.archlinux.org/'
-        },
-        {
-          icon: 'postman-logo.svg',
-          name: 'Postman',
-          url: 'https://www.getpostman.com/'
-        },
-        {
-          icon: 'after-effects.svg',
-          name: 'After Effects',
-          url: 'https://www.adobe.com/mx/products/aftereffects.html'
-        },
-        {
-          icon: 'audition.svg',
-          name: 'Audition',
-          url: 'https://www.adobe.com/mx/products/audition.html'
-        },
-        {
-          icon: 'illustrator.svg',
-          name: 'Illustrator',
-          url: 'https://www.adobe.com/mx/products/illustrator.html'
-        },
-        {
-          icon: 'adobe-photoshop.svg',
-          name: 'Photoshop',
-          url: 'https://www.adobe.com/mx/products/photoshop.html'
-        },
-        {
-          icon: 'premier.svg',
-          name: 'Premiere',
-          url: 'https://www.adobe.com/mx/products/premiere.html'
-        },
-        {
-          icon: 'media-encoder.svg',
-          name: 'Media Encoder',
-          url: 'https://www.adobe.com/mx/products/media-encoder.html'
-        }
-      ]
-    }
-  },
+      {
+        icon: 'vue-logo.png',
+        name: 'Flutter',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'Express.js',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'MongoDB',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'Node.js',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'React.js',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'CPanel',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'MySQL',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'Github',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'NPM',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'vue-logo.png',
+        name: 'SEO',
+        url: 'https://vuejs.org/'
+      },
+      {
+        icon: 'angular-icon.svg',
+        name: 'Angular',
+        url: 'https://angular.io/'
+      },
+      {
+        icon: 'ionic.svg',
+        name: 'Ionic',
+        url: 'https://ionicframework.com/'
+      },
+      {
+        icon: 'laravel-logo.svg',
+        name: 'Laravel',
+        url: 'https://laravel.com/'
+      },
+      {
+        icon: 'vscode-logo.svg',
+        name: 'VS Code',
+        url: 'https://code.visualstudio.com/'
+      },
+      {
+        icon: 'blender-logo.png',
+        name: 'Blender',
+        url: 'https://www.blender.org/'
+      },
+      {
+        icon: 'linux-logo.svg',
+        name: 'Linux',
+        url: 'https://www.archlinux.org/'
+      },
+      {
+        icon: 'linux-logo.svg',
+        name: 'MacOS',
+        url: 'https://www.archlinux.org/'
+      },
+      {
+        icon: 'postman-logo.svg',
+        name: 'Postman',
+        url: 'https://www.getpostman.com/'
+      },
+      {
+        icon: 'after-effects.svg',
+        name: 'After Effects',
+        url: 'https://www.adobe.com/mx/products/aftereffects.html'
+      },
+      {
+        icon: 'audition.svg',
+        name: 'Audition',
+        url: 'https://www.adobe.com/mx/products/audition.html'
+      },
+      {
+        icon: 'illustrator.svg',
+        name: 'Illustrator',
+        url: 'https://www.adobe.com/mx/products/illustrator.html'
+      },
+      {
+        icon: 'adobe-photoshop.svg',
+        name: 'Photoshop',
+        url: 'https://www.adobe.com/mx/products/photoshop.html'
+      },
+      {
+        icon: 'premier.svg',
+        name: 'Premiere',
+        url: 'https://www.adobe.com/mx/products/premiere.html'
+      },
+      {
+        icon: 'media-encoder.svg',
+        name: 'Media Encoder',
+        url: 'https://www.adobe.com/mx/products/media-encoder.html'
+      }
+    ]
+  }),
 }
 </script>
 

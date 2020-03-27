@@ -26,6 +26,7 @@ export default {
 <style lang="scss" scoped>
 #s-header {
   width: 100%;
+  overflow: hidden;
   height: 100vh;
 	max-height: 1080px;
   background: white;
@@ -87,29 +88,9 @@ export default {
     font-size: 1.2rem;
   }
 }
-
-@media screen and (max-width: 1070px) {
-  .portrait {
-    right: -100px;
-  }
-}
-@media screen and (max-width: 960px) {
-  .portrait {
-    right: -150px;
-  }
-}
-@media screen and (max-width: 910px) {
-  .portrait {
-    right: -150px;
-  }
-}
-@media screen and (max-width: 760px) {
-  .portrait {
-    right: -200px;
-  }
-}
 @media screen and (max-width: 700px) {
   .portrait {
+    right: -150px !important;
     bottom: -50px;
     opacity: 0.7;
   }

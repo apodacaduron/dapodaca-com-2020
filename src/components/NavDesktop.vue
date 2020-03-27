@@ -74,4 +74,10 @@ export default {
 .fill ul li a:hover {
 	background: rgba(0, 0, 0, 0.05);
 }
+
+@media screen and (max-width: 700px) {
+  #nav {
+    display: none;
+  }
+}
 </style>

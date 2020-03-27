@@ -3,7 +3,7 @@
     <div class="divider d-top"></div>
     <div class="title-container">
       <h4>Skills</h4>
-      <h2>Tools i've used</h2>
+      <h2>Tools i know</h2>
     </div>
     <div class="skills-content">
         <software-slider></software-slider>
