@@ -69,37 +69,55 @@ export default {
         logo: 'controlla.svg',
         title: 'Controlla Technologies',
         description: 'Designed and coded landing pages, worked on specific custom CRM and ERP systems, mobile apps on flutter, REST API usage, synchronized a COMPAQ local database through an electron client to store in the cloud, designed and integrated and interactive map for house selling, web deployment, database managment, general troubleshooting, computer support for company members and video/design for marketing occasionally.',
-        url: 'http://controlla.com.mx/'
+        url: 'http://controlla.com.mx/',
+        from: '12-2018',
+        to: '',
+        isCurrent: true
       },
       {
         logo: 'XnetW.svg',
         title: 'Xnet Total Solutions',
         description: 'Developed several Landing Pages, contributed on PHP Invoice Systems, added new features to a restaurant order taking system from a big restaurant franchise, created and managed websites through ssh on a Linux server and collaborated with the installation of Access Points on a building in Acapulco, Guerrero.',
-        url: 'https://www.xnet.com.mx/'
+        url: 'https://www.xnet.com.mx/',
+        from: '07-2018',
+        to: '12-2018',
+        isCurrent: false
       },
       {
         logo: 'itsncgP.png',
         title: 'ITSNCG',
         description: 'Worked as a photographer, video editor, motion graphics artist and social media manager.',
-        url: 'http://itsncg.edu.mx/'
+        url: 'http://itsncg.edu.mx/',
+        from: '09-2016',
+        to: '05-2018',
+        isCurrent: false
       },
       {
         logo: 'unsplash.png',
         title: 'Photographer',
         description: 'I have contributed on Unsplash with more than 80 professional photographies and generated over 44 million views and 350 thousand downloads, placing me under the 1000th most downloaded contributors ever, the pictures have been featured on big platforms like Trello, Adobe Spark, BuzzFeed, PicsArt, Unfold, Invision, Over and more independent businesses.',
-        url: 'http://unsplash.com/danielapodaca96'
+        url: 'http://unsplash.com/danielapodaca96',
+        from: '03-2017',
+        to: '03-2018',
+        isCurrent: false
       },
       {
         logo: 'video.svg',
         title: 'Freelance Video Producer',
         description: 'Produced music videos and music for local artists, from recording, editing, mastering and publishing.',
-        url: 'http://itsncg.edu.mx/'
+        url: 'http://itsncg.edu.mx/',
+        from: '03-2015',
+        to: '03-2017',
+        isCurrent: false
       },
       {
         logo: 'deskodelogo.png',
         title: 'Deskode',
         description: 'Worked as a motion graphics artists, animating advertising for local city TV\'s.',
-        url: 'http://deskode.com/'
+        url: 'http://deskode.com/',
+        from: '07-2015',
+        to: '10-2016',
+        isCurrent: false
       },
     ]
   })

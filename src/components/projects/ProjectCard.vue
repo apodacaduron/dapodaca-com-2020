@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card" :style="`background: url(${require(`@/assets/Projects/${data.image}`)}) no-repeat center center / cover;`" @click="redirectTo(data.url)">
+  <div class="project-card" :style="`background: url(${require(`@/assets/projects/${data.image}`)}) no-repeat center center / cover;`" @click="redirectTo(data.url)">
     <div class="card-text-container">
       <h3>{{ data.title }}</h3>
       <p>{{ data.description }}</p>

@@ -34,9 +34,6 @@ export default {
   padding: 70px 0 70px 0;
   box-sizing: border-box;
   position: relative;
-  .skills-content {
-
-  }
   .divider {
     width: 100%;
     position: absolute;

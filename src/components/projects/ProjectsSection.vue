@@ -32,63 +32,63 @@ export default {
         title: 'Ultra Colors',
         description: 'Website focused on creating and sharing color palettes for designers and developers, made with the MEVN stack.',
         url: '',
-        image: 'Jobs/Speed.jpg',
+        image: 'personal/palette.jpg',
         type: 0
       },
       {
         title: 'Real State',
         description: 'Landing page with administrator dashboard to create posts about homes for sale and rent, made with Angular and Laravel.',
         url: '',
-        image: 'Jobs/Speed.jpg',
+        image: 'personal/code1.jpg',
         type: 0
       },
       {
         title: 'Food Recipes',
         description: 'A mobile app to create, share, like and save food recipes, made with Ionic and Laravel',
         url: '',
-        image: 'Jobs/Speed.jpg',
+        image: 'personal/phone.jpg',
         type: 0
       },
       {
         title: 'Flutter CRM',
         description: 'Complementary app of an existing CRM using it\'s REST Api service.',
         url: '',
-        image: 'Jobs/Speed.jpg',
+        image: 'jobs/flutter.jpg',
         type: 1
       },
       {
         title: 'Electron COMPAQ Data Sync',
         description: 'Data sync from COMPAQ local database through an electron client to a crm on the cloud.',
         url: '',
-        image: 'Jobs/Speed.jpg',
+        image: 'jobs/code2.jpg',
         type: 1
       },
       {
         title: 'Speed',
         description: 'Speed is an indoor cycling company where you can create an account, buy credits and book lessons with you favorite instructors.',
         url: 'https://speedcycle.mx',
-        image: 'Jobs/Speed.jpg',
+        image: 'jobs/Speed.jpg',
         type: 1
       },
       {
         title: 'H20 Capital',
         description: 'An investments team landing page to showcase their service, team and contact.',
         url: 'https://www.h20capital.com/',
-        image: 'Jobs/Speed.jpg',
+        image: 'jobs/graphs1.jpg',
         type: 1
       },
       {
         title: 'CRM Systems',
         description: 'Multiple CRM Systems with the goal of improving business relationships and profitability.',
         url: 'https://www.h20capital.com/',
-        image: 'Jobs/Speed.jpg',
+        image: 'jobs/crm.jpg',
         type: 1
       },
       {
         title: 'ERP Systems',
         description: 'Focused on internal processes that are essential to a business, from inventory to customer management.',
         url: 'https://www.h20capital.com/',
-        image: 'Jobs/Speed.jpg',
+        image: 'jobs/erp.jpg',
         type: 1
       },
     ]

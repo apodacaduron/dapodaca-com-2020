@@ -3,9 +3,11 @@
     <div class="divider d-top"></div>
     <div class="title-container">
       <h4>Education</h4>
-      <h2>Where i come from</h2>
+      <h2>Summary</h2>
     </div>
     <div class="education-content">
+      <img src="@/assets/education/education.svg" alt="">
+      <p></p>
     </div>
     <div class="divider d-bottom"></div>
   </section>
@@ -14,21 +16,30 @@
 <script>
 export default {
   name: 'EducationSection',
-  components: {
-  },
   data: () => ({})
 }
 </script>
 
 <style lang="scss" scoped>
 #education {
-  min-height: 380px;
+  min-height: 450px;
   width: 100%;
-  padding: 70px 0 70px 0;
+  padding: 70px 20px 70px 20px;
   box-sizing: border-box;
   position: relative;
   .education-content {
-
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+    p {
+      width: 50%;
+      padding: 0 50px;
+      font-size: 1rem;
+    }
   }
   .divider {
     width: 100%;
@@ -60,7 +71,12 @@ export default {
 
 @media screen and (max-width: 768px) {
   .education-content {
-
+    img {
+      display: none;
+    }
+    p {
+      width: 100% !important;
+    }
   }
 }
 </style>
