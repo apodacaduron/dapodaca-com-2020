@@ -16,7 +16,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700&display=swap');
 :root {
   --light-gray: #F1F4FB;
-  --dark: #071017;
+  --dark: rgb(7, 16, 23);
 }
 body {
   margin: 0;

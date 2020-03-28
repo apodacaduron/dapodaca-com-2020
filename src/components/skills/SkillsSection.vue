@@ -6,7 +6,11 @@
       <h2>Tools i know</h2>
     </div>
     <div class="skills-content">
-        <software-slider></software-slider>
+      <software-slider></software-slider>
+      <div class="progress-container">
+        <progress-bar></progress-bar>
+        <span>Swipe to see more</span>
+      </div>
     </div>
     <div class="divider d-bottom"></div>
   </section>
@@ -17,6 +21,7 @@ export default {
   name: 'SkillsSection',
   components: {
     SoftwareSlider: () => import('@/components/SoftwareSlider.vue'),
+    ProgressBar: () => import('@/components/ProgressBar.vue')
   },
   data: () => ({})
 }
@@ -60,9 +65,11 @@ export default {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .skills-content {
-
-  }
+.progress-container {
+  max-width: 300px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 </style>

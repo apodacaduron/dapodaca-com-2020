@@ -1,14 +1,21 @@
 <template>
     <div>
-        <button class="d-button slide-btn" @click="$emit('click')">{{ text }}</button>
+        <button :style="`padding: ${padding}; width: ${width};`" class="d-button slide-btn" @click="$emit('click')">{{ text }}</button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'DButton',
+    name: 'DButtonW',
     props: {
         text: {
+            type: String
+        },
+        padding: {
+            type: String,
+            default: '10px 20px'
+        },
+        width: {
             type: String
         }
     }
@@ -17,19 +24,18 @@ export default {
 
 <style lang="scss" scoped>
 .d-button {
-  border: 1px solid #071017;
+  border: 1px solid white;
   border-radius: 2px;
-  padding: 10px 20px;
-  color: #071017;
+  color: white;
 }
 .d-button:hover {
-  color: white;
+  color: #071017;
 }
 .slide-btn {
   text-align: center;
   cursor: pointer;
   user-select: none;
-  background: linear-gradient(to right, #071017 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to right, white 50%, rgba(0, 0, 0, 0) 50%);
   background-size: 210% 100%;
   background-position: right bottom;
   transition: all .3s ease-out;
@@ -38,7 +44,7 @@ export default {
   text-align: center;
   cursor: pointer;
   user-select: none;
-  background: linear-gradient(to right, #ffffff 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to right, #071017 50%, rgba(0, 0, 0, 0) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .3s ease-out;

@@ -192,6 +192,7 @@ export default {
 .swiper-container {
   margin: 8px auto 0 auto;
   max-width: 1024px;
+  overflow: hidden;
   user-select: none;
 }
 .slide-item {
