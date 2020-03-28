@@ -41,82 +41,82 @@ export default {
     },
     softwareUsed: [
       {
-        icon: 'vue-logo.png',
+        icon: 'vueOG.png',
         name: 'Vue',
         url: 'https://vuejs.org/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'flutterOG.png',
         name: 'Flutter',
-        url: 'https://vuejs.org/'
+        url: 'https://flutter.dev/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'node.svg',
         name: 'Express.js',
-        url: 'https://vuejs.org/'
+        url: 'https://expressjs.com/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'mongo.png',
         name: 'MongoDB',
-        url: 'https://vuejs.org/'
+        url: 'https://www.mongodb.com/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'node.svg',
         name: 'Node.js',
-        url: 'https://vuejs.org/'
+        url: 'https://nodejs.org/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'react.svg',
         name: 'React.js',
-        url: 'https://vuejs.org/'
+        url: 'https://reactjs.org'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'cpanel.svg',
         name: 'CPanel',
-        url: 'https://vuejs.org/'
+        url: 'https://cpanel.net/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'mysql.png',
         name: 'MySQL',
-        url: 'https://vuejs.org/'
+        url: 'https://www.mysql.com/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'github.svg',
         name: 'Github',
-        url: 'https://vuejs.org/'
+        url: 'https://github.com/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'npm.png',
         name: 'NPM',
-        url: 'https://vuejs.org/'
+        url: 'https://npmjs.com/'
       },
       {
-        icon: 'vue-logo.png',
+        icon: 'lighthouse.svg',
         name: 'SEO',
-        url: 'https://vuejs.org/'
+        url: 'https://developers.google.com/web/tools/lighthouse'
       },
       {
-        icon: 'angular-icon.svg',
+        icon: 'angularOG.svg',
         name: 'Angular',
         url: 'https://angular.io/'
       },
       {
-        icon: 'ionic.svg',
+        icon: 'ionic.png',
         name: 'Ionic',
         url: 'https://ionicframework.com/'
       },
       {
-        icon: 'laravel-logo.svg',
+        icon: 'laravel.svg',
         name: 'Laravel',
         url: 'https://laravel.com/'
       },
       {
-        icon: 'vscode-logo.svg',
+        icon: 'vscode.png',
         name: 'VS Code',
         url: 'https://code.visualstudio.com/'
       },
       {
-        icon: 'blender-logo.png',
+        icon: 'blender.png',
         name: 'Blender',
         url: 'https://www.blender.org/'
       },
@@ -126,42 +126,42 @@ export default {
         url: 'https://www.archlinux.org/'
       },
       {
-        icon: 'linux-logo.svg',
+        icon: 'apple.png',
         name: 'MacOS',
-        url: 'https://www.archlinux.org/'
+        url: 'https://www.apple.com/'
       },
       {
-        icon: 'postman-logo.svg',
+        icon: 'postman.png',
         name: 'Postman',
         url: 'https://www.getpostman.com/'
       },
       {
-        icon: 'after-effects.svg',
+        icon: 'ae.png',
         name: 'After Effects',
         url: 'https://www.adobe.com/mx/products/aftereffects.html'
       },
       {
-        icon: 'audition.svg',
+        icon: 'au.png',
         name: 'Audition',
         url: 'https://www.adobe.com/mx/products/audition.html'
       },
       {
-        icon: 'illustrator.svg',
+        icon: 'illustrator.png',
         name: 'Illustrator',
         url: 'https://www.adobe.com/mx/products/illustrator.html'
       },
       {
-        icon: 'adobe-photoshop.svg',
+        icon: 'photoshop.png',
         name: 'Photoshop',
         url: 'https://www.adobe.com/mx/products/photoshop.html'
       },
       {
-        icon: 'premier.svg',
+        icon: 'premiere.png',
         name: 'Premiere',
         url: 'https://www.adobe.com/mx/products/premiere.html'
       },
       {
-        icon: 'media-encoder.svg',
+        icon: 'encoder.png',
         name: 'Media Encoder',
         url: 'https://www.adobe.com/mx/products/media-encoder.html'
       }
@@ -192,6 +192,7 @@ export default {
 .swiper-container {
   margin: 8px auto 0 auto;
   max-width: 1024px;
+  user-select: none;
 }
 .slide-item {
   width: auto;
@@ -206,6 +207,7 @@ export default {
   opacity: 0.8;
 }
 .icon {
+  max-width: 100px;
   height: 50px;
   width: auto;
   z-index: 8;

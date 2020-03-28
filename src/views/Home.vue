@@ -46,6 +46,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  user-select: none;
+}
 .slide-leave-active,
 .slide-enter-active {
   transition: 1s;

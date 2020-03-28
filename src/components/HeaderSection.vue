@@ -9,6 +9,8 @@
     </div>
     <img class="portrait" src="@/assets/portrait.png" alt="">
   </div>
+  <div class="logo"></div>
+  <div class="divider d-bottom"></div>
 </section>
 
 </template>
@@ -29,10 +31,33 @@ export default {
   overflow: hidden;
   height: 100vh;
 	max-height: 1080px;
-  background: white;
+  background: var(--light-gray);
+  padding: 0 0 15px 0;
   z-index: 1;
 	position: relative;
 	user-select: none;
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100vh;
+    opacity: 0.05;
+    z-index: 1;
+    background: url('../assets/MainLogoB.svg') no-repeat center center / cover;;
+  }
+  .divider {
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    left: 0;
+    z-index: 3;
+    background: url('../assets/divider.svg');
+    background-size: auto 105%;
+  }
+  .d-bottom {
+    bottom: 0;
+  }
   .w-container {
     max-width: 1800px;
     position: relative;
@@ -43,6 +68,7 @@ export default {
       position: absolute;
       right: 0;
       bottom: -20px;
+      z-index: 2;
     }
   }
   .m-center {
@@ -89,6 +115,9 @@ export default {
   }
 }
 @media screen and (max-width: 700px) {
+  .logo {
+    width: 190% !important;
+  }
   .portrait {
     right: -150px !important;
     bottom: -50px;
@@ -96,7 +125,7 @@ export default {
   }
   .title-container {
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     height: 100%;
     text-align: center;

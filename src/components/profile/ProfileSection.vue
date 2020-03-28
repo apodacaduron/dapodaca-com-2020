@@ -7,7 +7,7 @@
     </div>
     <div class="profile-content">
       <img src="@/assets/profile/about.svg" alt="">
-      <p>I am a Computer Systems Engineer with 3+ years of experience in web development and design, who has developed personal products and for enterprise clients from Mexico and United States. I usually work with custom projects specific to the business needs of a client, anything from Web Applications (Frontend / Backend), Mobile Apps, Database / Server Managment, Web Deployment, Graphic Design and Video Production.</p>
+      <p>I am a Computer Systems Engineer with 3+ years of experience in web development and design, who has developed personal products and for enterprise clients from Mexico and United States. I usually work with custom projects specific to the business needs of a client, anything from Web Applications (Frontend / Backend), Mobile Apps, Database / Server Management, Web Deployment, Graphic Design and Video Production.</p>
     </div>
     <div class="divider d-bottom"></div>
   </section>
