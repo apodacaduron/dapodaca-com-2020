@@ -18,7 +18,7 @@ export default {
   methods: {
     redirectTo (url) {
       if (url.includes('http')) {
-        window.open(url, '_blank')
+        window.open(url, '_blank', 'noreferrer')
       }
     }
   }

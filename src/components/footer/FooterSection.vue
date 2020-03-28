@@ -7,19 +7,19 @@
     </div>
     <div class="footer-content">
       <div class="links">
-        <a href="https://www.linkedin.com/in/danielapodaca96/" target="_blank">
+        <a aria-label="Linkedin" href="https://www.linkedin.com/in/danielapodaca96/" rel="noreferrer" target="_blank">
           <v-icon name="linkedin" baseClass="icon"></v-icon>
         </a>
-        <a href="https://www.instagram.com/danielapodaca96/" target="_blank">
+        <a aria-label="Instagram" href="https://www.instagram.com/danielapodaca96/" rel="noreferrer" target="_blank">
           <v-icon name="instagram" baseClass="icon"></v-icon>
         </a>
-        <a href="https://unsplash.com/@danielapodaca96" target="_blank">
+        <a aria-label="Unsplash" href="https://unsplash.com/@danielapodaca96" rel="noreferrer" target="_blank">
           <v-icon name="camera" baseClass="icon"></v-icon>
         </a>
-        <a href="https://www.facebook.com/Daniel.Apodaca.Duron" target="_blank">
+        <a aria-label="Facebook" href="https://www.facebook.com/Daniel.Apodaca.Duron" rel="noreferrer" target="_blank">
           <v-icon name="facebook" baseClass="icon"></v-icon>
         </a>
-        <a href="mailto:apodacaduron@gmail.com?subject=Website Contact">
+        <a aria-label="Mail to apodacaduron@gmail.com" href="mailto:apodacaduron@gmail.com?subject=Website Contact">
           <v-icon name="mail" baseClass="icon"></v-icon>
         </a>
       </div>

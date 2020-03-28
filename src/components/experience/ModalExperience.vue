@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     visitWebsite () {
-      window.open(this.data.url, '_blank')
+      window.open(this.data.url, '_blank', 'noreferrer')
     }
   }
 }
