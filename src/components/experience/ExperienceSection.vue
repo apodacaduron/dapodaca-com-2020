@@ -58,6 +58,8 @@ export default {
       direction: 'horizontal',
       slidesPerView: 'auto',
       keyboard: false,
+      freeMode: true,
+      freeModeMomentumRatio: 1,
       mousewheel: false,
       scrollbar: false,
       navigation: false,
@@ -86,7 +88,7 @@ export default {
       {
         logo: 'itsncgP.png',
         title: 'ITSNCG',
-        description: 'Worked as a photographer, video editor, motion graphics artist and social media manager.',
+        description: 'Worked as a photographer, video editor, motion graphics artist and managing social media.',
         url: 'http://itsncg.edu.mx/',
         from: '09-2016',
         to: '05-2018',

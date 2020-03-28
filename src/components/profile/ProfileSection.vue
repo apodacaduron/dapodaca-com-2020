@@ -39,6 +39,7 @@ export default {
       width: 50%;
       padding: 0 50px;
       font-size: 1rem;
+      color: #555555;
     }
   }
   .divider {

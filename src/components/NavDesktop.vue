@@ -15,7 +15,7 @@
             </ul>
         </div>
         <div class="contact-container w-140 d-center">
-            <d-button text="Download CV"></d-button>
+            <a href="./CV - Daniel Apodaca.pdf" class="d-button slide-btn">Download CV</a>
         </div>
     </div>
 </nav>
@@ -26,6 +26,10 @@ export default {
   name: 'navDesktop',
   components: {
       DButton: () => import('@/components/form/DButton.vue')
+  },
+  methods: {
+      openCV () {
+      }
   }
 }
 </script>
@@ -54,6 +58,7 @@ export default {
     display: flex;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 .nav-btn {
     padding: 8px 15px;
@@ -79,5 +84,35 @@ export default {
   #nav {
     display: none;
   }
+}
+.d-button {
+  border: 1px solid #071017;
+  border-radius: 2px;
+  padding: 10px 20px;
+  color: #071017;
+}
+.d-button:hover {
+  color: white;
+}
+.slide-btn {
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(to right, #071017 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  transition: all .3s ease-out;
+}
+.slide-btn-alt {
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(to right, #ffffff 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .3s ease-out;
+}
+.slide-btn:hover, .slide-btn-alt:hover {
+  background-position: left bottom;
 }
 </style>

@@ -34,7 +34,6 @@ export default {
     },
     periodLength () {
       if (!this.data.isCurrent) {
-        console.log(this.data.from, this.data.to)
         return moment(this.data.from, 'MM-YYYY').diff(moment(this.data.to, 'MM-YYYY'), 'months');
       }
       return moment(this.data.from, 'MM-YYYY').diff(moment(), 'months');

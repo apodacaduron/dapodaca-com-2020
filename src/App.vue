@@ -56,9 +56,6 @@ h1, h2, h3, h4 {
 a {
   text-decoration: none;
 }
-ul {
-  list-style: none;
-}
 .no-margins {
   margin: 0;
 }

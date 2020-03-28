@@ -7,16 +7,33 @@
     </div>
     <div class="education-content">
       <img src="@/assets/education/education.svg" alt="">
-      <p></p>
+      <div class="text-cont">
+        <h3>Instituto Tecnologico Superior de Nuevo Casas Grandes</h3>
+        <div>Ingenieria en Sistemas Computacionales {{ getPeriods }}</div>
+        <ul>
+          <li>Moved to a new city for my professional practices.</li>
+          <li>Developed a Laravel based system for a company.</li>
+          <li>Imparted a course of design using photoshop.</li>
+          <li>Collaborated on the organization of many school events.</li>
+          <li>Completed an entrepreneurship course.</li>
+          <li>Approved EGEL exam.</li>
+        </ul>
+      </div>
     </div>
     <div class="divider d-bottom"></div>
   </section>
 </template>
 
 <script>
+import moment from 'moment'
+
 export default {
   name: 'EducationSection',
-  data: () => ({})
+  computed: {
+    getPeriods () {
+      return `${moment(2014, 'YYYY').diff(moment(2018, 'YYYY'), 'months')} Months`;
+    }
+  },
 }
 </script>
 
@@ -35,10 +52,12 @@ export default {
     img {
       width: 50%;
     }
-    p {
+    .text-cont {
       width: 50%;
       padding: 0 50px;
-      font-size: 1rem;
+      ul, div {
+        color: #555555;
+      }
     }
   }
   .divider {
