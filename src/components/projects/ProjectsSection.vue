@@ -80,14 +80,14 @@ export default {
       {
         title: 'CRM Systems',
         description: 'Multiple CRM Systems with the goal of improving business relationships and profitability.',
-        url: 'https://www.h20capital.com/',
+        url: '',
         image: 'jobs/crm.jpg',
         type: 1
       },
       {
         title: 'ERP Systems',
         description: 'Focused on internal processes that are essential to a business, from inventory to customer management.',
-        url: 'https://www.h20capital.com/',
+        url: '',
         image: 'jobs/erp.jpg',
         type: 1
       },

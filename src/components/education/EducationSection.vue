@@ -93,7 +93,7 @@ export default {
     img {
       display: none;
     }
-    p {
+    .text-cont {
       width: 100% !important;
     }
   }

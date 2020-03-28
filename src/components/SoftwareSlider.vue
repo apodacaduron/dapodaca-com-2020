@@ -51,7 +51,7 @@ export default {
         url: 'https://flutter.dev/'
       },
       {
-        icon: 'node.svg',
+        icon: 'express.png',
         name: 'Express.js',
         url: 'https://expressjs.com/'
       },
