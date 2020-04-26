@@ -31,14 +31,14 @@ export default {
       {
         title: 'Ultra Colors',
         description: 'Website focused on creating and sharing color palettes for designers and developers, made with the MEVN stack.',
-        url: '',
+        url: 'http://ultracolors.dapodaca.com',
         image: 'personal/palette.jpg',
         type: 0
       },
       {
         title: 'Real State',
         description: 'Landing page with administrator dashboard to create posts about homes for sale and rent, made with Angular and Laravel.',
-        url: '',
+        url: 'http://real-estate.dapodaca.com',
         image: 'personal/code1.jpg',
         type: 0
       },
