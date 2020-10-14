@@ -15,6 +15,7 @@ pages:
     - npm install
     - npm run build
     - cp -r dist/* public
+    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -f -k {} \;
   artifacts:
     paths:
       - public
