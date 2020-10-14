@@ -97,7 +97,7 @@ export default {
       {
         logo: 'unsplash.png',
         title: 'Photographer',
-        description: 'I have contributed on Unsplash with more than 80 professional photographies and generated over 44 million views and 350 thousand downloads, placing me under the 1000th most downloaded contributors ever, the pictures have been featured on big platforms like Trello, Adobe Spark, BuzzFeed, PicsArt, Unfold, Invision, Over and more independent businesses.',
+        description: 'I have contributed on Unsplash with more than 80 professional photographies and generated over 52 million views and 408,089 downloads, placing me under the 1000th most downloaded contributors ever, the pictures have been featured on big platforms like Trello, Adobe Spark, BuzzFeed, PicsArt, Unfold, Invision, Over and more independent businesses.',
         url: 'http://unsplash.com/danielapodaca96',
         from: '03-2017',
         to: '03-2018',
