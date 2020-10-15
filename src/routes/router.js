@@ -8,8 +8,8 @@ import Home from '../views/Home.vue';
 const routes = new Router({
   mode: 'history',
   routes: [
-    { path: '/', component: Home },
-    { path: '*', redirect: '/' },
+    { path: '/dapodaca-com/', component: Home },
+    { path: '*', redirect: '/dapodaca-com/' },
   ],
 });
 
